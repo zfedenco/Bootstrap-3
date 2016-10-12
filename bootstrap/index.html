@@ -29,8 +29,8 @@
        </button>
      <a class="navbar-brand" href="#">Логотип</a>
      </div>
-     <div class="collapse navdar-collapse">
-       <ul class="nav navbar-nav"id="responsive-menu">
+     <div class="collapse navdar-collapse" id="responsive-menu" >
+       <ul class="nav navbar-nav">
           <li><a href="#">Пункт 1</a></li>
           <li class="dropdown">
             <a href="#" data-toggle="dropdown"data-target="dropdown" >Пункт 2 <b class="caret"></b></a>
@@ -80,17 +80,71 @@
     <h1>Hello, world!</h1>
   </div>
   <div class="col-md-6">
-    <a href="#spoiler-1"  data-toggle="collapse" data-target="spoiler-1" class="btn btn-primary">Открить</a>
-    <div class="collapse in" id="spoiler-1">
-     <div class="well">
+    <a href="#spoiler-1"  data-toggle="collapse">Открить</a>
+    <div class="collapse" id="spoiler-1">
        <p>Параграф</p>
      </div>
     </div>
-  </div>
-<button class="btn btn-info" data-toggle="collapse"
-data-target="#hide-me">Collapse Bootstrap.js</button>
+<button class="btn btn-info" data-toggle="collapse"data-target="#hide-me">
+  Collapse Bootstrap.js</button>
 <div id="hide-me" class="collapse">
 Анонимус — посетители анонимных борд, которые почти все являются анонимами.
+</div>
+<div class="fix-menu">
+  <div class="fluid-container menu-row">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="button-menu" data-toggle="collapse"data-target="#hide-max"></div>
+          <div class="fix-menu-right">
+            <a class=" dz " href="#"data-toggle="collapse"
+            data-target="#hide-bg">Обратний звонок</a>
+            <span>8 (960) 204-15-79</span>
+          </div>
+          <div class="fix-text">
+            <a href="#"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="hide-max" class="collapse">
+<div class="fluid-container item-row ">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="nav navbar-nav ">
+            <li><a href="#"class="menu">Главная</a></li>
+            <li><a href="#spoiler-2"  data-toggle="collapse" class="menu">Проекти &#8595;</a></li>
+            <li><a href="#"class="menu">Акции</a></li>
+            <li><a href="#"class="menu">О компании</a></li>
+            <li><a href="#"class="menu">Галерея</a></li>
+            <li><a href="#"class="menu">Ваканции</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+<div id="hide-bg" class="collapse">
+<div class="wrar_bg"></div>
+
+<div class="popur-wrar">
+    <div>
+      Заказать обратний
+      <b>звонок</b>
+      <p>Маленький текст</p>
+    </div>
+    <div class="fopm-popur">
+      <input class="input" type="email" name="email"placeholder="*Ваш email" id="email">
+      <br>
+      <input class="submit"type="submit" value="Позвоните мне">
+    </div>
+    <a class="close" href="#"></a>
+
+</div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
