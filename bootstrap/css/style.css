@@ -65,22 +65,23 @@ a:active, a:hover {
 .fix-text {
     text-align: center;
     height: 40px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .fix-text a {
     background: url("../images/logo2.png") center center no-repeat;
     height: 40px;
     width: 300px;
 }
-.item-row{
-    height: :50px;
-    background: #404040;
+.ht{
+   min-height: 30px;
+   background: #222;
 }
 .item-row a{
   margin-left: 10px;
   color:#c0c0c0;
   font-size: 18px;
+  t
 }
 .item-rowa a:hover{
   color: #ffffff;
@@ -96,7 +97,7 @@ a:active, a:hover {
     left: 0;
     right: 0;
 }
-.popur-wrar{
+.popur-wrar {
   position: fixed;
   top: 550px;
   left: 400px;
@@ -149,4 +150,7 @@ input{
 }
 .close:hover {
     background-position: -50px -60px;
+}
+.close:active{
+  #hide-bg{display: none;}
 }

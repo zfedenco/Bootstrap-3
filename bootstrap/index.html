@@ -10,12 +10,22 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src='jquery.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+$(document).ready(function(){
+  $(".close").click(function(){
+    $(".popur-wrar").hide();
+    $(".wrar_bg").hide();
+  });
+})
+</script>
   </head>
   <body>
   <div class="navbar navbar-inverse navbar-statik-top">
@@ -90,14 +100,14 @@
 <div id="hide-me" class="collapse">
 Анонимус — посетители анонимных борд, которые почти все являются анонимами.
 </div>
-<div class="fix-menu">
+<div class="fix-menu"data-spy="affix" data-offset-top="197">
   <div class="fluid-container menu-row">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
           <div class="button-menu" data-toggle="collapse"data-target="#hide-max"></div>
           <div class="fix-menu-right">
-            <a class=" dz " href="#"data-toggle="collapse"
+            <a id="form" href="#"data-toggle="collapse"
             data-target="#hide-bg">Обратний звонок</a>
             <span>8 (960) 204-15-79</span>
           </div>
@@ -110,11 +120,12 @@
   </div>
 
 <div id="hide-max" class="collapse">
-<div class="fluid-container item-row ">
+<div class=" ht fluid-container item-row ">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <ul class="nav navbar-nav ">
+        <nav class=" nav navbar-inverse">
+        <ul class="nav navbar-nav">
             <li><a href="#"class="menu">Главная</a></li>
             <li><a href="#spoiler-2"  data-toggle="collapse" class="menu">Проекти &#8595;</a></li>
             <li><a href="#"class="menu">Акции</a></li>
@@ -122,6 +133,7 @@
             <li><a href="#"class="menu">Галерея</a></li>
             <li><a href="#"class="menu">Ваканции</a></li>
         </ul>
+      </nav>
       </div>
     </div>
   </div>
@@ -146,6 +158,7 @@
 
 </div>
 </div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
